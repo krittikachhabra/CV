@@ -1,0 +1,93 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[]{cv-style}          % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                 % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+
+\sethyphenation[variant=british]{english}{} % Add words between the {} to avoid them to be cut 
+\usepackage{fontawesome}
+\begin{document}
+
+\header{Krittika}{Chhabra}      % Your name
+\lastupdated
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+
+%
+~
+~
+\begin{center}
+\faHome{ 5007, Sector 38-West, Chandigarh}
+\end{center}
+
+\begin{center}
+\faMobilePhone{ +(91) 7307189333} \textbf{ | }
+\faEnvelope{ krittikachhabra1998@gmail.com} \textbf{ | }
+\faGithub{ krittikachhabra} \textbf{ | }
+\faLinkedin{ krittika-chhabra}
+\end{center}
+%
+
+%----------------------------------------------------------------------------------------
+%	SUMMARY SECTION
+%----------------------------------------------------------------------------------------
+\vspace{0.5cm}
+%\section{Summary}
+%  \vspace{-0.2cm}
+
+%\input{resume/summary.tex}
+%\vspace{0.3cm}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education\hrulefill}
+\input{resume/education.tex}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Projects\hrulefill}
+\input{resume/project.tex}
+
+%----------------------------------------------------------------------------------------
+%	TRAININGS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Trainings\hrulefill}
+\input{resume/trainings.tex}
+  \vspace{-0.2cm}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Skills\hrulefill}
+\input{resume/skills.tex}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards\hrulefill}
+\input{resume/awards.tex}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EXTRA SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Extra Curricular\hrulefill}
+\input{resume/extra.tex}
+  \vspace{-0.2cm}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
