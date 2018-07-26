@@ -29,7 +29,7 @@
 \definecolor{green}{HTML}{A7E22E}
 \definecolor{purple}{HTML}{9358FE}
 \definecolor{aquamarine}{HTML}{36AF90}
-
+\definecolor{maroon}{HTML}{900C3F}
 \definecolor{date}{HTML}{A4A4A4}
 
 \ifdefined\@cv@print
@@ -39,6 +39,7 @@
   \colorlet{green}{gray}
   \colorlet{purple}{gray}
   \colorlet{aquamarine}{gray}
+  \colorlet{maroon}{gray}
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
@@ -130,7 +131,8 @@
         orange\or%
         green\or%
         purple\or%
-        aquamarine\else%
+        aquamarine\or%
+        maroon\else%
         headercolor\fi%
     } #1#2#3%
   }%
