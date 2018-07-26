@@ -113,7 +113,7 @@
   \begin{textblock}{10}(11.3, 0.05)
     \raggedleft
     \fontsize{8pt}{10pt}\color{date}\thinfont 
-    \lastupdatedtext{} \today
+   % \lastupdatedtext{} \today
   \end{textblock}}
 
 %----------------------------------------------------------------------------------------
@@ -209,6 +209,23 @@
     }
   \\}
   
+  
+\setlength{\tabcolsep}{0pt}
+\newenvironment{entryulist}{%
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+}{%
+  \end{tabular*}
+}
+
+\renewcommand{\bfseries}{\headingfont\color{headercolor}}
+\newcommand{\entryu}[3]{%
+   \parbox{\linewidth}{%
+   #1%
+    \textbf{#2}%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} \textbf{#3}}\\%
+    }
+  \\}
 
 
 %----------------------------------------------------------------------------------------
