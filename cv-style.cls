@@ -76,13 +76,15 @@
 
 \newcommand{\header}[2]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=2cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{65pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      {\thinfont #1}{\bodyfont  #2} 
+      \hfill
+%\includegraphics[scale=0.06]{image.jpg}
     };
   \end{tikzpicture}
-  \vspace{1cm}
+  \vspace{2cm}
   \vspace{-2\parskip}
 }
 
@@ -224,7 +226,9 @@
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=lightgray} \textbf{#3}}\\%
+    {\vspace{-2.5mm}}
     }
+    
   \\}
 
 
@@ -254,7 +258,7 @@
 % Other tweaks %
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=2.0cm, top=1cm, right=2.0cm, bottom=2.0cm, footskip=.5cm]{geometry}
+\RequirePackage[left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
     pdftitle=CV/Resume \textbar{} Krittika Chhabra,
